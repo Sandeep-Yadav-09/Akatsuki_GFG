@@ -1,0 +1,51 @@
+.logo {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.nav-bar{
+    width: auto;
+}
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem !important;
+    color: #FFFFFF !important;
+    
+}
+
+.dropdownlinks{
+    font-size: 1.1rem !important;
+}
+.dropdown-menu{
+    background-color: #22252f !important;
+}
+.link-col{
+    padding-left: 0;
+}
+.spanIcon{
+    width: 23px;
+    font-size: 1.5rem !important;
+    padding-right: 2px !important;
+}
+.profile-name {
+    font-size: 1.5rem !important;
+    color: #FFFFFF !important;
+}
+
+.FitInHeader{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-right: 10%;
+}
+
+@media screen and (max-width: 767px) {
+    #logoText{
+        display: none;
+    }
+    .nav-link{
+        font-size: 1.2rem !important;
+    }
+}

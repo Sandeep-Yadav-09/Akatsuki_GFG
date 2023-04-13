@@ -1,0 +1,20 @@
+.workoutItemCard {
+    margin-bottom: 15px;
+    background-color: #363d47 !important;
+    transition: 0.3s;
+}
+
+.workoutItemCard:hover {
+    background-color: #535d6d !important;
+}
+
+.workoutItemImg {
+    margin-right: 15px;
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 0.375rem;
+    max-width: 100px;
+    max-height: 100px;
+    height: auto;
+}

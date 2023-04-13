@@ -1,0 +1,24 @@
+.categoriesContainer {
+    overflow-y: hidden;
+    overflow-x: auto;   
+}
+
+.workoutsContainer {
+    overflow-y: hidden;
+    overflow-x: auto;   
+   
+}
+
+.workoutCard {
+    transition: 0.3s;
+}
+
+.workoutCard:hover {
+    background-color: #363d47 !important;
+}
+
+.workoutCardImg {
+    max-height: 200px; 
+    width: 100%; 
+    object-fit: Cover;
+}

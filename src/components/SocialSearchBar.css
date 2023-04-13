@@ -1,0 +1,38 @@
+.searchBar input{
+    background-color: #22252f !important;
+    height: 40px;
+    padding-right: 40px;
+}
+
+.searchIcon{
+    color: #fff;
+    right: 0.75rem;
+    top: 0.5rem;
+    cursor: pointer;
+}
+
+.searchBar p{
+    padding: 10px;
+    margin: 0;
+}
+
+.resultsContainer{
+    background-color: #212529;
+    width: 100%;
+    position: absolute;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+
+.resultItem:hover {
+    cursor: pointer;
+    background-color: #2C2F3A;
+}
+
+.resultImage {
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+
+}
