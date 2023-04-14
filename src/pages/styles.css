@@ -26,20 +26,20 @@ html {
   color: #FFFFFF;
   font-weight: 500;
   /* rgb(151, 20, 123) */
-  background-image: url('./gym.jpg');
+  /* background-image: url('./gym.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
-  position: relative;
+  position: relative;*/
 }
 
-body {
+/* body {
   background-image: url('./gym.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
   position: relative;
-}
+} */
 .background{
   background-image: url('./gym1.jpg');
   background-size: cover;
