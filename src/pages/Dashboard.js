@@ -13,6 +13,7 @@ import LineChart from "../components/LineChart";
 // import BarChart from "../../components/BarChart";
 import StatBox from "../components/StatBox";
 // import ProgressCircle from "../../components/ProgressCircle";
+import {steps} from "../components/StepCounter";
 
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -147,7 +148,7 @@ const Dashboard = () => {
 
         {/* ROW 2 */}
         <Box
-          gridColumn="span 8"
+          gridColumn="span 6"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
@@ -184,8 +185,17 @@ const Dashboard = () => {
           </Box>
           <Box height="250px" m="-20px 0 0 0">
             <LineChart isDashboard={true} />
+            {/* <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1dba5e8b-aca7-44d6-bf34-23f5ad47c187"></iframe> */}
           </Box>
-          <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1dba5e8b-aca7-44d6-bf34-23f5ad47c187"></iframe>
+          <Box height="250px">
+    <iframe
+      width="300px"
+      height="250px"
+      allow="microphone;"
+      src="https://console.dialogflow.com/api-client/demo/embedded/1dba5e8b-aca7-44d6-bf34-23f5ad47c187"
+    ></iframe>
+  </Box>
+          
         </Box>
 
         {/* <Box  gridColumn="span 8">

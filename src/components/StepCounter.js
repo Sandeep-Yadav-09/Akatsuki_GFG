@@ -6,7 +6,8 @@ import { useAuth } from "../contexts/AuthContext";
 import { Card, InputGroup, Form, Button } from "react-bootstrap";
 import { FaShoePrints } from "react-icons/fa";
 
-function StepCounter({ date, dayData }) {
+function StepCounter({ date, dayData}) {
+
   const [steps, setSteps] = useState(0);
   const [addStepsToInput, setAddStepsToInput] = useState(0);
   const { currentUser } = useAuth();
@@ -42,6 +43,7 @@ function StepCounter({ date, dayData }) {
   }, [dayData, date]);
 
   return (
+    
     <Card bg="dark">
       <Card.Body>
         <h3 className="text-center d-flex align-items-center justify-content-center">
