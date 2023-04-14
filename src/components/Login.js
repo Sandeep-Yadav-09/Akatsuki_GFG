@@ -25,14 +25,14 @@ function Login() {
 		<div className="formCenter">
 			<form onSubmit={handleSubmit} className="formFields">
 				<div className="formField">
-					<label className="formFieldLabel" htmlFor="email">
+					<label className="formFieldLabel" htmlFor="email" style={{ fontSize: "18px" }}>
 						E-Mail Address
 					</label>
-					<input required type="email" id="email" className="formFieldInput" placeholder="Enter your email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+					<input required type="email" id="email" className="formFieldInput" style={{ fontSize: "15px" }} placeholder="Enter your email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 				</div>
 
 				<div className="formField">
-					<label className="formFieldLabel" htmlFor="password">
+					<label className="formFieldLabel" style={{ fontSize: "18px" }} htmlFor="password">
 						Password
 					</label>
 					<input
@@ -41,6 +41,7 @@ function Login() {
 						id="password"
 						className="formFieldInput"
 						placeholder="Enter your password"
+						style={{ fontSize: "15px" }}
 						name="password"
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
@@ -48,7 +49,7 @@ function Login() {
 				</div>
 
 				<div className="formField">
-					<button className="formFieldButton">Sign In</button>
+					<button className="formFieldButton" style={{ fontSize: "15px" }}>Sign In</button>
 					<div className="googleButton">
 						<GoogleButton className="googleBtn" type="light" label="Login with Google" onClick={handleGoogle} />
 					</div>

@@ -76,7 +76,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="12,361"
+            title="0"
             subtitle="Steps covered"
             progress="0.75"
             // increase="+14%"
@@ -95,7 +95,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="431,225"
+            title="0"
             subtitle="Calories burnt"
             progress="0.50"
             increase="+21%"
@@ -114,7 +114,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="32,441"
+            title="0"
             subtitle="Heartbeat Rate"
             progress="0.30"
             increase="+5%"
@@ -133,7 +133,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="1,325,134"
+            title="0"
             subtitle="Streak"
             progress="0.80"
             increase="+43%"
@@ -185,6 +185,7 @@ const Dashboard = () => {
           <Box height="250px" m="-20px 0 0 0">
             <LineChart isDashboard={true} />
           </Box>
+          <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1dba5e8b-aca7-44d6-bf34-23f5ad47c187"></iframe>
         </Box>
 
         {/* <Box  gridColumn="span 8">

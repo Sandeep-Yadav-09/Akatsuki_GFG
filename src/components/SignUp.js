@@ -30,13 +30,13 @@ function SignUp() {
 					<label className="formFieldLabel" htmlFor="name" style={{ fontSize: "18px" }}>
 						Full Name
 					</label>
-					<input required type="text" id="name" className="formFieldInput" placeholder="Enter your full name" name="name" value={name} onChange={(e) => setName(e.target.value)} />
+					<input required type="text" id="name" className="formFieldInput" style={{ fontSize: "15px" }} placeholder="Enter your full name" name="name" value={name} onChange={(e) => setName(e.target.value)} />
 				</div>
 				<div className="formField">
 					<label className="formFieldLabel" htmlFor="email" style={{ fontSize: "18px" }}>
 						E-Mail Address
 					</label>
-					<input required type="email" id="email" className="formFieldInput" placeholder="Enter your email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+					<input required type="email" id="email" className="formFieldInput" style={{ fontSize: "15px" }} placeholder="Enter your email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 				</div>
 				<div className="formField">
 					<label className="formFieldLabel" htmlFor="password" style={{ fontSize: "18px" }}>
@@ -48,6 +48,7 @@ function SignUp() {
 						id="password"
 						className="formFieldInput"
 						placeholder="Enter your password"
+						style={{ fontSize: "15px" }}
 						name="password"
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
