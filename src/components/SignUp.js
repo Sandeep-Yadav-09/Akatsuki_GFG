@@ -27,19 +27,19 @@ function SignUp() {
 		<div className="formCenter">
 			<form onSubmit={handleSubmit} className="formFields">
 				<div className="formField">
-					<label className="formFieldLabel" htmlFor="name" >
+					<label className="formFieldLabel" htmlFor="name" style={{ fontSize: "18px" }}>
 						Full Name
 					</label>
 					<input required type="text" id="name" className="formFieldInput" placeholder="Enter your full name" name="name" value={name} onChange={(e) => setName(e.target.value)} />
 				</div>
 				<div className="formField">
-					<label className="formFieldLabel" htmlFor="email">
+					<label className="formFieldLabel" htmlFor="email" style={{ fontSize: "18px" }}>
 						E-Mail Address
 					</label>
 					<input required type="email" id="email" className="formFieldInput" placeholder="Enter your email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
 				</div>
 				<div className="formField">
-					<label className="formFieldLabel" htmlFor="password">
+					<label className="formFieldLabel" htmlFor="password" style={{ fontSize: "18px" }}>
 						Password
 					</label>
 					<input
