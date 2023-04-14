@@ -1,6 +1,6 @@
-import gold from '../images/gold.png';
-import silver from '../images/silver.png';
-import bronze from '../images/bronze.png';
+import gold from './gold.png';
+import silver from './silver.png';
+import bronze from './bronze.png';
 
 const createScoreRow = (score, index) => {
   const listRow = document.createElement('div');

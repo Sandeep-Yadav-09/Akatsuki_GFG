@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Profiles from "./profiles";
 import { data } from "./database";
-import './leaderboard.css';
-import './style.css';
-import '../css/styles.css';
+// import './leaderboard.css';
+// import './style.css';
+import './styles.css';
 import './btn-animate.js';
 import {
   renderPage,
@@ -78,6 +78,67 @@ const Leaderboard = () => {
         });
       });
 
+
+      return (
+        <div>
+        <div id="canvas"></div>
+        <h1 class="page-header">Leaderboard</h1>
+        <div class="container">
+          <div class="score-list">
+            <div class="title-box">
+              <h2 class="sub-title">Recent Scores</h2>
+              <button class="btn btn-refresh" type="button" id="btn-refresh">
+                Refresh <i class="bi bi-arrow-repeat"></i>
+              </button>
+            </div>
+            <div class="score-list-box"></div>
+            <p class="fetch-error"></p>
+          </div>
+  
+          {/* <div class="wrapper-score-submit">
+            <h2 class="form-title">Add Your Score</h2> */}
+            {/* <form
+              action="https://formspree.io/f/mdobanyg"
+              id="submit-form"
+              class="score-submit-form"
+              method="post"
+            > */}
+              {/* <div class="wrapper-input">
+                <input
+                  type="text"
+                  id="user"
+                  name="score-name"
+                  placeholder="Your name"
+                  required
+                />
+              </div> */}
+  
+              {/* <div class="wrapper-input">
+                <input
+                  type="number"
+                  id="score"
+                  name="score"
+                  placeholder="Your score"
+                  required
+                  min="0"
+                  max="6"
+                />
+              </div> */}
+              
+              {/* <p class="submit-error">Please enter all require fields.</p>
+  
+              <button class="btn-score-submit" id="score-submit" type="submit"> */}
+                {/* <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </button> */}
+            {/* </form> */}
+          {/* </div> */}
+        </div>
+        </div>
+      );
 //     const [period, setPeriod] = useState(0);
 
 //   const handleClick = (e) => {
@@ -102,24 +163,24 @@ const Leaderboard = () => {
 
 export default Leaderboard
 
-function between(data, between){
-    const today = new Date();
-    const previous = new Date(today);
-    previous.setDate(previous.getDate() - (between + 1));
+// function between(data, between){
+//     const today = new Date();
+//     const previous = new Date(today);
+//     previous.setDate(previous.getDate() - (between + 1));
 
-    let filter = data.filter(val => {
-        let userDate = new Date(val.dt);
-        if (between == 0) return val;
-        return previous <= userDate && today >= userDate;
-    })
+//     let filter = data.filter(val => {
+//         let userDate = new Date(val.dt);
+//         if (between == 0) return val;
+//         return previous <= userDate && today >= userDate;
+//     })
 
-    // sort with asending order
-    return filter.sort((a, b) => {
-        if ( a.score === b.score){
-            return b.score - a.score;
-        } else{
-            return b.score - a.score;
-        }
-    })
+//     // sort with asending order
+//     return filter.sort((a, b) => {
+//         if ( a.score === b.score){
+//             return b.score - a.score;
+//         } else{
+//             return b.score - a.score;
+//         }
+//     })
 
-}
+// }

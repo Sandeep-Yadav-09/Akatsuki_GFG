@@ -30,7 +30,7 @@ html {
 
 body {
   background: linear-gradient(to right, #93fcf6,#cc4cd1);
-  background-image: url('../images/gym.jpg');
+  background-image: url('./gym.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
