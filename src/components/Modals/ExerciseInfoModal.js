@@ -12,9 +12,9 @@ function ExerciseInfoModal({ show, onClose, workoutName, workoutImage, workoutDe
 					{workoutImage.map((image, i) => {
 						return (
 							<Carousel.Item key={i}>
-								<div className="text-center">
+								{/* <div className="text-center">
 									<Image className="d-block" height="300px" src={image} alt="First slide" style={{ marginRight: "auto", marginLeft: "auto" }} />
-								</div>
+								</div> */}
 							</Carousel.Item>
 						);
 					})}
