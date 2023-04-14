@@ -26,16 +26,34 @@ html {
   color: #FFFFFF;
   font-weight: 500;
   /* rgb(151, 20, 123) */
-}
-
-body {
-  background: linear-gradient(to right, #93fcf6,#cc4cd1);
   background-image: url('./gym.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
   position: relative;
 }
+
+body {
+  background-image: url('./gym.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: relative;
+}
+.background{
+  background-image: url('./gym1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  position: relative;
+  backdrop-filter:blur(10px);
+}
+
+.blur-background{
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
 
 #canvas {
   z-index: -1;
@@ -95,6 +113,7 @@ main {
   font-weight: 600;
   padding-right: 3rem;
   color: var(--purple);
+  color:#FFFFFF;
 }
 
 .container {
@@ -177,18 +196,22 @@ main {
 .score-list-score {
   font-size: 1.6rem;
   padding: 1.2rem 0;
+  color: #FFFFFF;
+
 }
 
 .score-list-score {
   font-weight: bold;
   justify-self: end;
   padding-right: 2rem;
+  color: #FFFFFF;
 }
 
 .serial-number {
   width: 20px;
   font-size: 2.2rem;
   padding: 0 2rem;
+  color: #FFFFFF;
 }
 
 .medal {
@@ -247,7 +270,7 @@ main {
   font-size: 2.8rem;
   font-weight: 600;
   padding-bottom: 2rem;
-  color: rgb(4, 34, 27);
+  color: #FFFFFF;
 }
 
 .score-submit-form {
@@ -408,6 +431,7 @@ input[type='number']::-webkit-outer-spin-button {
   .score-list-score {
     font-size: 1.3rem;
     align-self: center;
+    color:#FFFFFF;
   }
 
   .score-list-score {

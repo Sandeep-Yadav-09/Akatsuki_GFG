@@ -10,7 +10,7 @@ function SignUp() {
 	const [password, setPassword] = useState("");
 
 	useEffect(() => {
-		document.title = `Sign Up | FitIn`;
+		document.title = `Sign Up | FitSure`;
 	}, []);
 
 	async function handleSubmit(e) {

@@ -57,12 +57,12 @@ const Leaderboard = () => {
         const nameInput = document.querySelector('#user');
         const scoreInput = document.querySelector('#score');
         if (sendFormData()) {
-          submitError.classList.remove('error');
+          // submitError.classList.remove('error');
           form.reset();
           nameInput.focus();
         } else {
-          submitError.textContent = 'Please Enter All the Require Fields.';
-          submitError.classList.add('error');
+          // submitError.textContent = 'Please Enter All the Require Fields.';
+          // submitError.classList.add('error');
           scoreInput.focus();
         }
       });
@@ -75,35 +75,36 @@ const Leaderboard = () => {
         fetchScores().then((data) => {
           renderPage(sortScores(data.result));
           storeData('scores', data.result);
+          
         });
       });
 
 
       return (
-        <div>
+        <div className="background">
         <div id="canvas"></div>
         <h1 class="page-header">Leaderboard</h1>
         <div class="container">
           <div class="score-list">
             <div class="title-box">
               <h2 class="sub-title">Recent Scores</h2>
-              <button class="btn btn-refresh" type="button" id="btn-refresh">
+              {/* <button class="btn btn-refresh" type="button" id="btn-refresh">
                 Refresh <i class="bi bi-arrow-repeat"></i>
-              </button>
+              </button> */}
             </div>
             <div class="score-list-box"></div>
             <p class="fetch-error"></p>
           </div>
   
-          {/* <div class="wrapper-score-submit">
-            <h2 class="form-title">Add Your Score</h2> */}
-            {/* <form
+          <div class="wrapper-score-submit">
+            <h2 class="form-title">Add Your Score</h2>
+            <form
               action="https://formspree.io/f/mdobanyg"
               id="submit-form"
               class="score-submit-form"
               method="post"
-            > */}
-              {/* <div class="wrapper-input">
+            >
+              <div class="wrapper-input">
                 <input
                   type="text"
                   id="user"
@@ -111,9 +112,9 @@ const Leaderboard = () => {
                   placeholder="Your name"
                   required
                 />
-              </div> */}
+              </div>
   
-              {/* <div class="wrapper-input">
+              <div class="wrapper-input">
                 <input
                   type="number"
                   id="score"
@@ -123,19 +124,19 @@ const Leaderboard = () => {
                   min="0"
                   max="6"
                 />
-              </div> */}
+              </div>
               
-              {/* <p class="submit-error">Please enter all require fields.</p>
+              <p class="submit-error">Please enter all require fields.</p>
   
-              <button class="btn-score-submit" id="score-submit" type="submit"> */}
-                {/* <span></span>
+              <button class="btn-score-submit" id="score-submit" type="submit">
+                <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 Submit
-              </button> */}
-            {/* </form> */}
-          {/* </div> */}
+              </button>
+            </form>
+          </div>
         </div>
         </div>
       );

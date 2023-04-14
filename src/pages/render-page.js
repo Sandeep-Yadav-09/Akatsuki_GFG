@@ -74,6 +74,7 @@ const sortScores = (scores) => {
 
 const storeData = (key, value) => {
   sessionStorage.setItem(key, JSON.stringify(sortScores(value)));
+
 };
 
 const getData = (key) =>
@@ -101,6 +102,7 @@ const renderPage = (scores) => {
   if (scores.length > 0) {
     scores.forEach((score, index) => {
       leaderList.appendChild(createScoreRow(score, index));
+      console.log(score);
     });
     topThreeScores(scores);
     alternatBackground();

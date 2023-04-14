@@ -1,21 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
 .landingPage {
-    min-height: 100vh;
-    color: white;
+    /* min-height: 100vh; */
+    /* color: white; */
     background: #12130f;
 }
 
 .landingImageContainer {
+    
     padding: 0 !important;
+
 }
 
-.landingImage{
-    width:100%;
+.landingImage {
+    background-image: url('./gym2.jpg');
+    width: 100%;
     height: 100vh;
     object-fit: cover;
+    background-size: cover;
+    background-position: center center;
     overflow: hidden;
+    position: relative; /* Add this line to set the positioning context for pseudo-element */
 }
 
+.landingImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0; /* Position the pseudo-element at the right side */
+    width: 30%; /* Set the width of the fading effect */
+    height: 100%;
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.5)); /* Add linear gradient for fading effect */
+}
+
+
 .landingHeader {
+    font-family: 'Philosopher';
     text-align: center;
     margin: 5% 0;
     font-size: 4em;

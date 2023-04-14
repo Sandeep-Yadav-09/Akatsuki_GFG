@@ -29,7 +29,7 @@ function NavBar() {
         >
           <Image alt="logo" className="logo" src={"/fitin_logo.png"} />{" "}
           <h2 className="my-auto" id="logoText" style={{ fontWeight: "bold" }}>
-            Fit<span style={{ color: "#0d6efd" }}>In</span>
+            Fit<span style={{ color: "#0d6efd" }}>Sure</span>
           </h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
