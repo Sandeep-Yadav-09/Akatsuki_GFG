@@ -37,14 +37,14 @@ const Dashboard = () => {
     createData(1,"Brody",100),
     
   ];
-  (function(d, m){
-    var kommunicateSettings = 
-        {"appId":"1f4e4b1f421c3c134da03fe3aeafaff47","popupWidget":true,"automaticChatOpenOnNavigation":true};
-    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-    s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-    var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-    window.kommunicate = m; m._globals = kommunicateSettings;
-})(document, window.kommunicate || {});
+//   (function(d, m){
+//     var kommunicateSettings = 
+//         {"appId":"1f4e4b1f421c3c134da03fe3aeafaff47","popupWidget":true,"automaticChatOpenOnNavigation":true};
+//     var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+//     s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+//     var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+//     window.kommunicate = m; m._globals = kommunicateSettings;
+// })(document, window.kommunicate || {});
 
   return (
     <Box m="20px">
@@ -85,7 +85,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="0"
+            title="100"
             subtitle="Steps covered"
             progress="0.75"
             // increase="+14%"
@@ -104,7 +104,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="0"
+            title="23"
             subtitle="Calories burnt"
             progress="0.50"
             increase="+21%"
@@ -123,7 +123,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="0"
+            title="72"
             subtitle="Heartbeat Rate"
             progress="0.30"
             increase="+5%"
@@ -142,7 +142,7 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="0"
+            title="7"
             subtitle="Streak"
             progress="0.80"
             increase="+43%"
