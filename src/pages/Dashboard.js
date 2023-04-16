@@ -37,6 +37,14 @@ const Dashboard = () => {
     createData(1,"Brody",100),
     
   ];
+  (function(d, m){
+    var kommunicateSettings = 
+        {"appId":"1f4e4b1f421c3c134da03fe3aeafaff47","popupWidget":true,"automaticChatOpenOnNavigation":true};
+    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+    s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+    var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+    window.kommunicate = m; m._globals = kommunicateSettings;
+})(document, window.kommunicate || {});
 
   return (
     <Box m="20px">
@@ -187,14 +195,14 @@ const Dashboard = () => {
             <LineChart isDashboard={true} />
             {/* <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1dba5e8b-aca7-44d6-bf34-23f5ad47c187"></iframe> */}
           </Box>
-          <Box height="250px">
+          {/* <Box height="250px">
     <iframe
       width="300px"
       height="250px"
       allow="microphone;"
       src="https://console.dialogflow.com/api-client/demo/embedded/1dba5e8b-aca7-44d6-bf34-23f5ad47c187"
     ></iframe>
-  </Box>
+  </Box> */}
           
         </Box>
 
