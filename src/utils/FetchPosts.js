@@ -10,9 +10,6 @@ import {
 
 const docLimit = 5;
 
-/*
- * FUNCTION NOT BEING USED -- REPLACED BY SNAPSHOT CODE in SocialPage.js
- */
 export const fetchFirstBatchPosts = async function () {
     try {
         const data = await getDocs(
